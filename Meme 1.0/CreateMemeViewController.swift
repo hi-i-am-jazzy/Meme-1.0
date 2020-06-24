@@ -183,8 +183,9 @@ class CreateMemeViewController: UIViewController, UIImagePickerControllerDelegat
         activityViewController.completionWithItemsHandler = {
             (activity, success, items, error) in
             if (success) {
-                let _ = Meme(topText: self.topTextField.text!, bottomText: self.bottomTextField.text!, originalImage: self.pickedImageView.image!, memedImage: self.generateMemedImage())
+                let meme = Meme(topText: self.topTextField.text!, bottomText: self.bottomTextField.text!, originalImage: self.pickedImageView.image!) 
                 self.dismiss(animated: true, completion: nil)
+                (UIApplication.shared.delegate as! AppDelegate).memes.append(meme)
             }
         }
         present(activityViewController, animated: true, completion: nil)
