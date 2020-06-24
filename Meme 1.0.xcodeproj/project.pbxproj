@@ -19,6 +19,7 @@
 		D7AC113824866D8900801CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7AC113624866D8900801CEB /* Main.storyboard */; };
 		D7AC113A24866D8C00801CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7AC113924866D8C00801CEB /* Assets.xcassets */; };
 		D7AC113D24866D8C00801CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7AC113B24866D8C00801CEB /* LaunchScreen.storyboard */; };
+		D7C6E97B24A35A7D00C69ED2 /* MemeListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C6E97A24A35A7D00C69ED2 /* MemeListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D7AC113924866D8C00801CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7AC113C24866D8C00801CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7AC113E24866D8C00801CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C6E97A24A35A7D00C69ED2 /* MemeListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				D704AFA624A3250000918686 /* ModuleDI.swift */,
 				D704AFA424A1DBF700918686 /* MemeDetailController.swift */,
 				D704AFA024A1B89B00918686 /* MemeListViewController.swift */,
+				D7C6E97A24A35A7D00C69ED2 /* MemeListViewCell.swift */,
 				D704AFA224A1B8B000918686 /* MemeCollectionViewController.swift */,
 				D704AFA824A342CD00918686 /* MemeCollectionViewCell.swift */,
 				D7AC113924866D8C00801CEB /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 				D704AFA724A3250000918686 /* ModuleDI.swift in Sources */,
 				D7AC113124866D8900801CEB /* AppDelegate.swift in Sources */,
 				D704AFA324A1B8B000918686 /* MemeCollectionViewController.swift in Sources */,
+				D7C6E97B24A35A7D00C69ED2 /* MemeListViewCell.swift in Sources */,
 				D7AC113324866D8900801CEB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,6 +17,11 @@ class MemeListViewController: UIViewController, UITableViewDelegate, UITableView
         let appDelegate = object as! AppDelegate
         return appDelegate.memes
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.memes.count
@@ -24,10 +29,10 @@ class MemeListViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        //let storedMeme = self.memes[(indexPath as NSIndexPath).row]
-        //cell.previewImage.image = storedMeme.originalImage
-        //cell.previewText.text = storedMeme.topText
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Table Cell")! as! MemeListViewCell
+        let storedMeme = self.memes[(indexPath as NSIndexPath).row]
+        cell.previewImage.image = storedMeme.originalImage
+        cell.previewText.text = storedMeme.topText
         return cell
     }
     

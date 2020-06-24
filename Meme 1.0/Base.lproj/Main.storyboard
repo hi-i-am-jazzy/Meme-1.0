@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="134" id="ld6-Mh-LGo">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Table Cell" rowHeight="134" id="ld6-Mh-LGo" customClass="MemeListViewCell" customModule="Meme_1_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="134"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ld6-Mh-LGo" id="d7Z-Dw-fBr">
@@ -41,6 +41,10 @@
                                         <constraint firstItem="qUg-40-9yj" firstAttribute="centerY" secondItem="d7Z-Dw-fBr" secondAttribute="centerY" id="lZM-ta-tLf"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="previewImage" destination="qUg-40-9yj" id="yAR-qp-FZB"/>
+                                    <outlet property="previewText" destination="tI6-0M-3k8" id="ihy-Bn-nOQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -313,7 +317,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qSh-gp-xJE"/>
+        <segue reference="wqX-gE-KOk"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera" catalog="system" width="128" height="96"/>
